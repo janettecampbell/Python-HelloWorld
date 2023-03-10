@@ -1,8 +1,11 @@
-name = input("What is your name? ")
+weight = float(input("What is your weight? "))
+unit = input("What units? (L)bs or (K)gs?")
 
-if len(name) < 3:
-    print("Name must be at least 3 characters.")
-elif len(name) > 50:
-    print("Name can me a maximum of 50 characters.")
+if unit.upper() == "L":
+    converted = weight * 0.45359237
+    print(f"You are {converted} kilos")
+elif unit.upper() == "K":
+    converted = weight * 2.20462262185
+    print(f"You are {converted} pounds")
 else:
-    print("Name looks good!")
+    print("Please enter a L or K for units.")

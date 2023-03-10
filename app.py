@@ -1,7 +1,8 @@
-first_name = "John"
-last_name = "Smith"
-message = first_name + " [" + last_name + "] is a coder"
-formatted_message = f"{first_name} [{last_name}] is a coder"
+import math
 
-print("Concatenated: " + message)
-print("Formatted: " + formatted_message)
+print(math.floor(2.9))
+
+x = 2.9
+
+print("Round: " + str(round(x)))
+print("Absolute: " + str(abs(x)))

@@ -1,11 +1,12 @@
-weight = float(input("What is your weight? "))
-unit = input("What units? (L)bs or (K)gs?")
+secret_number = 9
+guess_count = 0
+guess_limit = 3
 
-if unit.upper() == "L":
-    converted = weight * 0.45359237
-    print(f"You are {converted} kilos")
-elif unit.upper() == "K":
-    converted = weight * 2.20462262185
-    print(f"You are {converted} pounds")
+while guess_count < guess_limit:
+    guess = int(input("Guess: "))
+    guess_count += 1
+    if guess == secret_number:
+        print("You won!")
+        break
 else:
-    print("Please enter a L or K for units.")
+    print("Sorry, you failed.")

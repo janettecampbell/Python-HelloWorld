@@ -1,10 +1,7 @@
-course = '''
-Hi John,
+first_name = "John"
+last_name = "Smith"
+message = first_name + " [" + last_name + "] is a coder"
+formatted_message = f"{first_name} [{last_name}] is a coder"
 
-Here is our first email to you.
-
-Thank you,
-The Support Team
-'''
-
-print(course)
+print("Concatenated: " + message)
+print("Formatted: " + formatted_message)

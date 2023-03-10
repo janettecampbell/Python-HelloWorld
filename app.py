@@ -1,8 +1,12 @@
-import math
+is_hot = False
+is_cold = False
 
-print(math.floor(2.9))
-
-x = 2.9
-
-print("Round: " + str(round(x)))
-print("Absolute: " + str(abs(x)))
+if is_hot:
+    print("It's a hot day")
+    print("Drink plenty of water")
+elif is_cold:
+    print("It's a cold day")
+    print("Wear warm clothes")
+else:
+    print("It's a lovely day")
+print("Enjoy your day")

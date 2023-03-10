@@ -1,4 +1,10 @@
-name = input("What is your name? ")
-color = input("What is your favorite color? ")
+import datetime
 
-print(name + " likes " + color)
+birth_year = input("Birth year: ")
+print(type(birth_year))
+today = datetime.date.today()
+this_year = today.year
+age = this_year - int(birth_year)
+print(type(age))
+
+print(age)

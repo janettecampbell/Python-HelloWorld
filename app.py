@@ -1,10 +1,4 @@
-import datetime
+weight_lbs = input("What is your weight in pounds? ")
+weight_kgs = float(weight_lb) * 0.45359237
 
-birth_year = input("Birth year: ")
-print(type(birth_year))
-today = datetime.date.today()
-this_year = today.year
-age = this_year - int(birth_year)
-print(type(age))
-
-print(age)
+print(weight_kgs)

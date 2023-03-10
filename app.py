@@ -1,11 +1,19 @@
 car_status = ""
 
 while car_status != "quit":
+    car_status_previous = car_status[:]
     car_status = input("> ").lower()
+
     if car_status == "start":
-        print("Car started... Ready to go!")
+        if car_status == car_status_previous:
+            print("Car already started!")
+        else:
+            print("Car started... Ready to go!")
     elif car_status == "stop":
-        print("Car stopped.")
+        if car_status == car_status_previous:
+            print("Car already stopped!")
+        else:
+            print("Car stopped.")
     elif car_status == "help":
         print("""
 start - to start the car

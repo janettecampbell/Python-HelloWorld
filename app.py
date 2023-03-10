@@ -1,4 +1,10 @@
-weight_lbs = input("What is your weight in pounds? ")
-weight_kgs = float(weight_lb) * 0.45359237
+course = '''
+Hi John,
 
-print(weight_kgs)
+Here is our first email to you.
+
+Thank you,
+The Support Team
+'''
+
+print(course)

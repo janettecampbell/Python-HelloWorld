@@ -1,18 +1,11 @@
-# convert emoji converter to a function
+# Exceptions
 
-def emoji_converter(str):
-    words = str.split(" ")
-    emojis = {
-        ":)": "😀",
-        ":(": "😔"
-    }
-    output = ""
-
-    for word in words:
-        output += emojis.get(word, word) + " "
-    return output
-
-
-message = input(">")
-
-print(emoji_converter(message))
+try:
+    age = int(input("Age: "))
+    income = 20000
+    risk = income / age
+    print(age)
+except ZeroDivisionError:
+    print("Age cannot be zero.")
+except ValueError:
+    print("Invalid Value")

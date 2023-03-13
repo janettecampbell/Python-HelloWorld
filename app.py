@@ -15,8 +15,7 @@ while car_status != "quit":
         else:
             print("Car stopped.")
     elif car_status == "help":
-        print("""
-start - to start the car
+        print("""start - to start the car
 stop - to stop the car
 quit - to exit""")
     elif car_status == "quit":

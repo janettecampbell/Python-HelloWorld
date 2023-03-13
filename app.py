@@ -1,3 +1,7 @@
-names = ["John", "Bob", "Mosh", "Sarah", "Mary"]
+numbers = [3, 6, 2, 8, 4, 10]
+largest_number = numbers[0]
 
-print(names[2:4])
+for number in numbers:
+    if number > largest_number:
+        largest_number = number
+print(largest_number)

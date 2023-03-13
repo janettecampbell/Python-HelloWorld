@@ -1,6 +1,5 @@
-# Tuples
+# Unpacking
 
-numbers = (1, 2, 3)
-numbers[0] = 10
+coordinates = (1, 2, 3)
+x, y , z = coordinates
 
-print(numbers[0])

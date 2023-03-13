@@ -1,7 +1,9 @@
-numbers = [3, 6, 2, 8, 4, 10]
-largest_number = numbers[0]
+matrix = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+]
 
-for number in numbers:
-    if number > largest_number:
-        largest_number = number
-print(largest_number)
+for row in matrix:
+    for item in row:
+        print(item)

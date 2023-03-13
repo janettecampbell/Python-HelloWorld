@@ -1,8 +1,3 @@
-numbers_F = [5, 2, 5, 2, 2]
-numbers_L = [2, 2, 2, 2, 5]
+names = ["John", "Bob", "Mosh", "Sarah", "Mary"]
 
-for number in numbers_L:
-    string = ""
-    for item in range(number):
-        string += "X"
-    print(string)
+print(names[2:4])

@@ -1,10 +1,6 @@
-numbers = [2, 2, 4, 6, 3, 4, 6, 1]
+# Tuples
 
-# Delete Duplicates
-uniques = []
+numbers = (1, 2, 3)
+numbers[0] = 10
 
-for number in numbers:
-    if number not in uniques:
-        uniques.append(number)
-
-print(uniques)
+print(numbers[0])

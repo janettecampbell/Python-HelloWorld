@@ -1,6 +1,18 @@
-#calculate square of a number
-def square (number):
-    print(number* number)
+# convert emoji converter to a function
+
+def emoji_converter(str):
+    words = str.split(" ")
+    emojis = {
+        ":)": "😀",
+        ":(": "😔"
+    }
+    output = ""
+
+    for word in words:
+        output += emojis.get(word, word) + " "
+    return output
 
 
-print(square(3))
+message = input(">")
+
+print(emoji_converter(message))

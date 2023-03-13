@@ -1,15 +1,8 @@
-# Emoji Converter
+def greet_user():
+    print("Hi there!")
+    print("Welcome aboard")
 
-message = input(">")
-words = message.split(" ")
-emojis = {
-    ":)": "😀",
-    ":(": "😔"
-}
 
-output = ""
-
-for word in words:
-    output+= emojis.get(word, word) + " "
-
-print(output)
+print("Start")
+greet_user()
+print("Finish")

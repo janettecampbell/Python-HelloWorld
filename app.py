@@ -1,17 +1,21 @@
-# Classes
+# Inheritance
 
-class Person:
-    def __init__(self, name):
-        self.name = name
+class Mammal:
+    def walk(self):
+        print("walk")
 
-    def talk (self):
-        print(f"Hi! I am {self.name}.")
+class Dog(Mammal):
+    def bark(self):
+        print("bark")
 
 
-jane = Person("Jane")
-print(jane.name)
-jane.talk()
+class Cat(Mammal):
+    def be_annoying(self):
+        print("annoying")
 
-bob = Person("Bob")
-print(bob.name)
-bob.talk()
+dog1 = Dog()
+dog1.walk()
+dog1.bark()
+
+kitty1 = Cat()
+kitty1.be_annoying()

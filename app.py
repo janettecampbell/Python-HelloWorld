@@ -1,8 +1,5 @@
-# Modules
+# Packages
 
-import utils
+from ecommerce import shipping
 
-numbers = [10, 3, 6, 2]
-
-result = utils.find_max(numbers)
-print(result)
+shipping.calc_shipping()
